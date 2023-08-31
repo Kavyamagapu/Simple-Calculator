@@ -73,11 +73,14 @@
         
         try{
             
-            output.value = eval(output.value);
-            if(output.value == '1')
+            if(output.value=='1+')
             {
-                output.value = 'HEYYY!';
+              output.value="One Plus";
             }
+            else
+            {
+              output.value=eval(output.value);
+            }  
         }
         catch(err)
         {
